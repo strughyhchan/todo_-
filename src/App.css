@@ -2,15 +2,56 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1{
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+input {
+  width: 300px;
+  height: 40px;
+  font-size: 16px;
+  padding: 0 10px;
+}
+.addButton{
+  background-color: blue;
+  color:azure;
+  height: 40px;
+  padding: 0 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.todoList {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.todoItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #61dafb;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Dij{
+  background-color: transparent;
+  border:none;
+  cursor: pointer;
 }
 
 .App-header {
