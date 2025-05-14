@@ -7,11 +7,10 @@ function App() {
   const [toDo,setToDo] = useState("");
   const[toDos, setToDos] = useState([]);
   const onChange = (event) => setToDo(event.target.value);
-  
+  //삭제기능
   const handleDelete = (deleteIndex) => {
     setToDos(currentArray => 
       currentArray.filter((_, index)=>index !== deleteIndex)
-
     );
   };
 
@@ -23,7 +22,7 @@ function App() {
     setToDos(currentArray => [toDo, ...currentArray]);
     setToDo("");
   };
-  
+  //리스트와 엑스버튼튼
   return (
     <div>
       <h1>My To Dos({toDos.length})</h1>
@@ -53,5 +52,4 @@ function App() {
      
   );
 }
-
 export default App;
