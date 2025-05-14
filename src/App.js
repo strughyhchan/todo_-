@@ -7,7 +7,7 @@ function App() {
   const [toDo,setToDo] = useState("");
   const[toDos, setToDos] = useState([]);
   const onChange = (event) => setToDo(event.target.value);
-  
+  //삭제기능
   const handleDelete = (deleteIndex) => {
     setToDos(currentArray => 
       currentArray.filter((_, index)=>index !== deleteIndex)
