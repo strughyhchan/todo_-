@@ -11,7 +11,6 @@ function App() {
   const handleDelete = (deleteIndex) => {
     setToDos(currentArray => 
       currentArray.filter((_, index)=>index !== deleteIndex)
-      //배열 새로생성성
     );
   };
 
@@ -53,5 +52,4 @@ function App() {
      
   );
 }
-//완료
 export default App;
