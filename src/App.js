@@ -11,7 +11,7 @@ function App() {
   const handleDelete = (deleteIndex) => {
     setToDos(currentArray => 
       currentArray.filter((_, index)=>index !== deleteIndex)
-
+      //배열 새로생성성
     );
   };
 
@@ -23,7 +23,7 @@ function App() {
     setToDos(currentArray => [toDo, ...currentArray]);
     setToDo("");
   };
-  
+  //리스트와 엑스버튼튼
   return (
     <div>
       <h1>My To Dos({toDos.length})</h1>
@@ -53,5 +53,5 @@ function App() {
      
   );
 }
-
+//완료
 export default App;
